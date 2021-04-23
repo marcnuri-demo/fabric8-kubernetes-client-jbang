@@ -32,6 +32,8 @@ public class I002912_KubernetesDSLSupport {
       kc.storage().storageClasses().list().getItems().forEach(print);
       System.out.println("Listing Volume Attachments:");
       kc.storage().volumeAttachments().list().getItems().forEach(print);
+      System.out.println("Listing CSI Storage Capacity:");
+      kc.storage().csiStorageCapacities().list().getItems().forEach(print);
     }
   }
 }
